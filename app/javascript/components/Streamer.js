@@ -274,8 +274,8 @@ class Streamer extends React.Component {
                 reconnect: true
             },
             identity: {
-              username: 'Travesty',
-              password: 'oauth:awisj4m97gz5zfw0imvauhk9ou1h2z'
+              username: 'EventsBotTG',
+              password: 'oauth:0kuu30evmq6eczrqi39omggxy5p04x'
             },
             channels: [
               streamer_name
