@@ -10,6 +10,7 @@ Ruby on Rails, ReactJS
 >The second/streamer page shows an embedded livestream, chat and list of 10 most recent events for your favorite streamer. This page doesn’t poll the backend and rather leverages web sockets and relevant Twitch API.
 
 While I was able to get the 10 most recent events of the current user, it is not possible to get the events of the current user's favourite streamer without that streamer's authorization. This is because the authorization token of the current user is linked to only to their channel as explained in the offical Twitch PubSub docs seen here:
+
 ![twitch_docs](https://github.com/tgritter/streamlabs_assignment/blob/master/readme_images/twitch_docs_auth_token.png)
 
 And explained in discussion threads here:
@@ -17,13 +18,16 @@ https://discuss.dev.twitch.tv/t/err-badauth-with-pubsub/10093/2
 https://discuss.dev.twitch.tv/t/getting-realtime-channel-events-for-any-channel/19735/2
 
 For example, if I am currently viewing my own channel I am able to listen to my channel's whispers.
+
 ![current_user_channel](https://github.com/tgritter/streamlabs_assignment/blob/master/readme_images/current_user_channel.png)
 
 However, if I try to listen to the whispers of another channel, I will receive a BADAUTH error.
+
 ![streamers_channel](https://github.com/tgritter/streamlabs_assignment/blob/master/readme_images/favourite_streamer_screenshot.png)
 
 This is intended functionality of the Twitch developers. You cannot receive the events of another's users channel without them going through the authenication flow of this app. 
 As such, I have also created a chatbot that will send the current user's favourite streamer a message in their chat requesting that they give access to their events by logging into this app. I have limited events to ones that require any scope for security reasons relating to this issue.
+
 ![chatbot](https://github.com/tgritter/streamlabs_assignment/blob/master/readme_images/chatbot_screenshot.png)
 
 This appears to be the only way to fullfil the requirements of this assignment
@@ -49,6 +53,3 @@ Other stragetries I might employ:
 * Ensuring my database is properly indexed
 * Have an aggressive timeout solution
 * Refactor code to increase optimization
-
-
-
