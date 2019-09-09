@@ -7,6 +7,8 @@ ruby '2.5.1'
 gem 'rails', '~> 6.0.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+# Use pg < 1.0
+gem 'pg', '< 1.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -55,6 +57,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'omniauth-twitch'
 gem 'activerecord-session_store'
-gem 'pg'
 gem 'msgpack_rails'
 
