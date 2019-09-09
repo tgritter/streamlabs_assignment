@@ -1,10 +1,7 @@
-.container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+html, body {
     background-color: #182228;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar_container {
@@ -16,7 +13,35 @@
     background-color: #31C3A2;
     border-bottom: solid 1px #B2B2B2;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    margin-top: -16px;
 
+    .navbar_title {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #182228;
+    }
+    
+    .navbar_name {
+        display: flex;
+        flex: 1;
+        justify-content: flex-start;
+        font-weight: bold;
+        color: #182228;
+        margin-left: 10px;
+    }
+    
+    .navbar_logout {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: flex-end;
+        font-weight: bold;
+        color: #182228;
+        margin-right: 10px;
+    }
 }
 
 .input_container {
@@ -25,7 +50,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin: 60px;
 
     .streamer_text {
         font-weight: bold;
@@ -101,6 +126,10 @@
     font-weight: bold;
     font-size: 24px;
     color: white;
+}
+
+.events_listen_text {
+    text-align: center
 }
 
 .message {

@@ -13,7 +13,9 @@ class Navbar extends React.Component {
     render () {
         return (
             <div className="navbar_container">
-                <div type="navbar_title">Watch your favourite Streamer</div>
+                {this.props.type === 'streamer_page' ? <div className="navbar_name">{`Welcome, ${this.props.current_user_name}`}</div> : null}
+                <div className="navbar_title">Watch your favourite Streamers here</div>
+                {this.props.type === 'streamer_page' ? <a className="navbar_logout" href={"/home"}></a> : null}
             </div>
         )
     }

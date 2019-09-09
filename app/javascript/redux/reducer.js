@@ -1,7 +1,7 @@
 import { LOAD } from 'redux-storage';
 
 const initialState = {
-    streamer_name: 'test'
+    streamer_name: ''
 };
 
   const rootReducer = (state = initialState, action) => {

@@ -18,7 +18,12 @@ class Home extends React.Component {
                 <Navbar />
                 <div className="input_container">
                     <div className="streamer_text">Enter the name of your favourite streamer</div>
-                    <input className="input_box" type="text" value={streamer_name} onChange={this.handleChange} />
+                    <input 
+                        className="input_box" 
+                        type="text" 
+                        placeholder="Streamer Name"
+                        value={streamer_name} 
+                        onChange={this.handleChange} />
                     <a className="login_text" href={"/users/auth/twitch"}>Login with Twitch</a>
                 </div>
             </div>
