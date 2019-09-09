@@ -48,7 +48,7 @@ To handle scaling to the EC2 instances, I would use Elastic Beanstalk. Elastic B
 To handle scaling to the RDS database, I will use Redis. Redis works by storing data in-memory rather than storing data on disk like databases such as PostgresQL. This prevents requests from having to make a round-trip to the disk everytime a request is stored. This will reduce processing time and resources when users send a request to the database. This will make the app more efficient as it scales and must handle more requests.
 
 Other stragetries I might employ:
-* Implement client-side caching of the database where appripriate
+* Implement client-side caching of the database where appropriate
 * Optimize clients to make fewer requests to application
 * Ensuring my database is properly indexed
 * Have an aggressive timeout solution
