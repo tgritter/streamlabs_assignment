@@ -20,6 +20,7 @@ https://discuss.dev.twitch.tv/t/err-badauth-with-pubsub/10093/2
 https://discuss.dev.twitch.tv/t/getting-realtime-channel-events-for-any-channel/19735/2
 
 
+
 For example, if I am currently viewing my own channel I am able to listen to my channel's whispers.
 
 ![current_user_channel](https://github.com/tgritter/streamlabs_assignment/blob/master/readme_images/current_user_channel.png)
