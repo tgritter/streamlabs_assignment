@@ -264,14 +264,13 @@ class Streamer extends React.Component {
     }
 
     chatBot = () => {
-        const {streamer_name, current_user_name} = this.props;
+        const {streamer_name, current_user_name} = this.state;
+        console.log('CurrentUserName: ', current_user_name)
         const opts = {
-            options: {
-                debug: true
-            },
             connection: {
                 cluster: "aws",
-                reconnect: true
+                reconnect: true,
+                secure: true
             },
             identity: {
               username: 'EventsBotTG',
