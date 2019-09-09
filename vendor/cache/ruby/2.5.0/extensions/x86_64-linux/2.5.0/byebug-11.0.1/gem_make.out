@@ -1,0 +1,19 @@
+current directory: /home/travis/Coding/s3/streamlabs_project_tg/vendor/cache/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+/usr/bin/ruby2.5 -r ./siteconf20190907-28127-1pgq93y.rb extconf.rb
+creating Makefile
+
+current directory: /home/travis/Coding/s3/streamlabs_project_tg/vendor/cache/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/travis/Coding/s3/streamlabs_project_tg/vendor/cache/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/travis/Coding/s3/streamlabs_project_tg/vendor/cache/ruby/2.5.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20190907-28127-1fs6ou4/byebug

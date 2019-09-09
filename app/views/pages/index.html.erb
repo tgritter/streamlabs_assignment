@@ -1,0 +1,17 @@
+<%= javascript_pack_tag 'index'%>
+<% @users = User.all %>
+
+<%= content_tag :div,
+  id: "user_data",
+  data: @users.to_json do %>
+<% end %>
+
+<%= content_tag :div,
+  id: "current_user",
+  data: current_user.to_json do %>
+<% end %>
+
+<%= content_tag :div,
+  id: "client_id",
+  data: ENV['TWITCH_APP_ID'].to_json do %>
+<% end %>
