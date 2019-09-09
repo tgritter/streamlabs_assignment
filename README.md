@@ -14,6 +14,7 @@ While I was able to get the 10 most recent events of the current user, it is not
 ![twitch_docs](https://github.com/tgritter/streamlabs_assignment/blob/master/readme_images/twitch_docs_auth_token.png)
 
 And explained in discussion threads here:
+
 https://discuss.dev.twitch.tv/t/err-badauth-with-pubsub/10093/2
 https://discuss.dev.twitch.tv/t/getting-realtime-channel-events-for-any-channel/19735/2
 
